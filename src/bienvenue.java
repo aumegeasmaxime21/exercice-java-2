@@ -60,8 +60,81 @@ public class bienvenue {
         }
         else {
             System.out.println("impair");
-        }
+            }
+        input.close();
 */
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Choix du type operation 1-Addition 2-soustraction 3-multiplication 4-division");
+        int number = input.nextInt();
+        if (number == 1) {
+            System.out.println("operation choisi 1-Addition");
+
+            System.out.println("entrer la premiere valeur");
+            int valeur1 = input.nextInt();
+
+            System.out.println("entrer la deuxieme valeur");
+            int valeur2 = input.nextInt();
+
+            System.out.println (valeur1 + valeur2) ;
+        }
+        if (number == 2) {
+            System.out.println("operation 2-soustraction");
+
+            System.out.println("entrer la premiere valeur");
+            int valeur1 = input.nextInt();
+
+            System.out.println("entrer la deuxieme valeur");
+            int valeur2 = input.nextInt();
+
+            System.out.println (valeur1 - valeur2) ;
+        }
+        if (number == 3) {
+            System.out.println("operation choisi 3-multiplication");
+
+            System.out.println("entrer la premiere valeur");
+            int valeur1 = input.nextInt();
+
+            System.out.println("entrer la deuxieme valeur");
+            int valeur2 = input.nextInt();
+
+            System.out.println (valeur1 * valeur2) ;
+        }
+        if (number == 4) {
+            System.out.println("operation choisi 4-division");
+
+            System.out.println("entrer la premiere valeur");
+            int valeur1 = input.nextInt();
+
+            System.out.println("entrer la deuxieme valeur");
+            int valeur2 = input.nextInt();
+
+            System.out.println (valeur1 / valeur2) ;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
