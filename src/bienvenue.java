@@ -63,6 +63,8 @@ public class bienvenue {
             }
         input.close();
 */
+
+        //calculatrice
 /*
         Scanner input = new Scanner(System.in);
         System.out.println("Choix du type operation 1-Addition 2-soustraction 3-multiplication 4-division");
@@ -78,7 +80,7 @@ public class bienvenue {
 
             System.out.println (valeur1 + valeur2) ;
         }
-        if (number == 2) {
+        else if (number == 2) {
             System.out.println("operation 2-soustraction");
 
             System.out.println("entrer la premiere valeur");
@@ -89,7 +91,7 @@ public class bienvenue {
 
             System.out.println (valeur1 - valeur2) ;
         }
-        if (number == 3) {
+        else if (number == 3) {
             System.out.println("operation choisi 3-multiplication");
 
             System.out.println("entrer la premiere valeur");
@@ -100,7 +102,7 @@ public class bienvenue {
 
             System.out.println (valeur1 * valeur2) ;
         }
-        if (number == 4) {
+        else if (number == 4) {
             System.out.println("operation choisi 4-division");
 
             System.out.println("entrer la premiere valeur");
@@ -110,15 +112,101 @@ public class bienvenue {
             double valeur2 = input.nextDouble();
 
             System.out.println (valeur1 / valeur2) ;
+            }
+            else {
+            System.out.println("entrer une valeur valide 1,2,3,4" );
+            }
+*/
+// exercice 1.1
+/*
+        Scanner input = new Scanner(System.in);
+        System.out.println("Entrer une valeur pour savoir si elle est positive, negative ou nulle");
+        double number = input.nextDouble();
 
-}
+        if (number < 0) {
+            System.out.println("valeur negative");
+        } else if (number == 0) {
+            System.out.println("valeur nulle");
+        }
+        else {
+            System.out.println("valeur povitif");
+        }
+*/
+// exercice 1.3
+/*
+        Scanner input = new Scanner(System.in);
+        System.out.println("Entrer une note entre 0 et 20");
+        double number = input.nextDouble();
+
+        if (number >= 16 ) {
+            System.out.println("Très bien");
+        }
+        else if (number >= 12 ) {
+            System.out.println("Bien");
+        }
+        else if (number >= 10 ) {
+            System.out.println("Assez bien");
+        }
+        else {
+            System.out.println("Insuffisant");
+        }
 */
 
+        // exercice 1.4
+/*
+        Scanner input = new Scanner(System.in);
 
+        System.out.println("entrer la premiere valeur");
+        double valeur1 = input.nextDouble();
 
+        System.out.println("entrer la deuxieme valeur");
+        double valeur2 = input.nextDouble();
 
+        if (valeur1 == valeur2) {
+            System.out.println(valeur1 + " Les valeurs sont égale " + valeur2);
+        }
+        else if (valeur1 < valeur2) {
+            System.out.println(valeur1 + " est plus petite que " + valeur2);
+        }
+        else {
+            System.out.println(valeur1 + " est plus grande que " + valeur2);
+        }
+ */
+        // Boucle For table multiplication
+/*
+        Scanner input = new Scanner(System.in);
 
+        System.out.println("choisir la table de multiplication");
+        int valeur1 = input.nextInt();
 
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(i * valeur1);
+        }
+*/
+/*
+        // exercice 2.1 2.2 2.3
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+        for (int i = 10; i > 0; i--) {
+            System.out.println(i);
+        }
+        for (int l = 0; l < 20; l++) {
+            if ((l % 2) == 0) {
+                System.out.println(l);
+            }
+        }
+*/
+    // exercice 2.4 pas reussi seul
+/*
+        int somme = 0;
+        for (int i = 1; i <= 100; i++ ) {
+            somme += i;
+            System.out.println(somme);
+        }
+        System.out.println(somme);
+*/
 
 
 
