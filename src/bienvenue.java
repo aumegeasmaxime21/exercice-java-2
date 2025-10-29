@@ -125,7 +125,8 @@ public class bienvenue {
 
         if (number < 0) {
             System.out.println("valeur negative");
-        } else if (number == 0) {
+        }
+        else if (number == 0) {
             System.out.println("valeur nulle");
         }
         else {
@@ -151,9 +152,9 @@ public class bienvenue {
             System.out.println("Insuffisant");
         }
 */
-
-        // exercice 1.4
 /*
+        // exercice 1.4
+
         Scanner input = new Scanner(System.in);
 
         System.out.println("entrer la premiere valeur");
@@ -171,7 +172,7 @@ public class bienvenue {
         else {
             System.out.println(valeur1 + " est plus grande que " + valeur2);
         }
- */
+*/
         // Boucle For table multiplication
 /*
         Scanner input = new Scanner(System.in);
@@ -186,10 +187,10 @@ public class bienvenue {
 /*
         // exercice 2.1 2.2 2.3
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i <= 10; i++) {
             System.out.println(i);
         }
-        for (int i = 10; i > 0; i--) {
+        for (int i = 10; i >= 0; i--) {
             System.out.println(i);
         }
         for (int l = 0; l < 20; l++) {
@@ -203,11 +204,79 @@ public class bienvenue {
         int somme = 0;
         for (int i = 1; i <= 100; i++ ) {
             somme += i;
-            System.out.println(somme);
         }
         System.out.println(somme);
 */
 
+        //calculatrice version 2
+
+        boolean run = true;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Choix du type operation 1-Addition 2-soustraction 3-multiplication 4-division");
+        int number = input.nextInt();
+
+
+        while (run)
+            switch (number) {
+                case 1 :
+                    System.out.println("operation choisi 1-Addition");
+
+                    System.out.println("entrer la premiere valeur");
+                    double valeur1 = input.nextDouble();
+
+                    System.out.println("entrer la deuxieme valeur");
+                    double valeur2 = input.nextDouble();
+
+                    System.out.println (valeur1 + valeur2) ;
+                    run = false;
+                    break;
+
+                case 2 :
+                    System.out.println("operation 2-soustraction");
+
+                    System.out.println("entrer la premiere valeur");
+                    double valeur3 = input.nextDouble();
+
+                    System.out.println("entrer la deuxieme valeur");
+                    double valeur4 = input.nextDouble();
+
+                    System.out.println (valeur3 - valeur4) ;
+                    run = false;
+                    break;
+
+                case 3 :
+                    System.out.println("operation choisi 3-multiplication");
+
+                    System.out.println("entrer la premiere valeur");
+                    double valeur5 = input.nextDouble();
+
+                    System.out.println("entrer la deuxieme valeur");
+                    double valeur6 = input.nextDouble();
+
+                    System.out.println (valeur5 * valeur6) ;
+                    run = false;
+                    break ;
+
+                case 4 :
+                    System.out.println("operation choisi 4-division");
+
+                    System.out.println("entrer la premiere valeur");
+                    double valeur7 = input.nextDouble();
+
+                    System.out.println("entrer la deuxieme valeur");
+                    double valeur8 = input.nextDouble();
+
+                    System.out.println (valeur7 / valeur8) ;
+                    run = false;
+                    break ;
+                default :
+                    System.out.println("entrer une valeur valide 1,2,3,4" );
+                    number = input.nextInt();
+
+
+                }
+        System.out.println("Fermeture du programme");
 
 
 
@@ -223,9 +292,13 @@ public class bienvenue {
 
 
 
+/*
+        // switch
 
-
-
+        Scanner input = new Scanner(System.in);
+        System.out.println("entrer une note entre A et F pour le % de reussite de l'examen");
+        String note = input.nextLine();
+*/
 
 
 
